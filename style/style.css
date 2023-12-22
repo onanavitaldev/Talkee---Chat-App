@@ -1,0 +1,193 @@
+:root {
+    --color: #570f73;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+/*Scrollbar CSS*/
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 6px;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--color);
+}
+.form_connexion_inscription {
+    display: flex;
+    background-color: #fff;
+    flex-direction: column;
+    width: 350px;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+}
+.form_connexion_inscription .message_error {
+    color: red;
+    font-size: 14px;
+}
+.form_connexion_inscription  label {
+    margin: 2px 0;
+}
+.form_connexion_inscription input {
+    background-color: #f1f1f1;
+    caret-color: var(--color);
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 50px;
+    border: 1px solid #f1f1f1;
+}
+.form_connexion_inscription input:focus {
+    border: 1px solid var(--color);
+    outline: none;
+}
+.form_connexion_inscription input::placeholder {
+    color: #4e4e4e;
+    margin-left: 25px;
+}
+.form_connexion_inscription input[type='submit']{
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: var(--color);
+    border: 1px solid var(--color);
+    border-radius: 50px;
+    color: #fff;
+}
+.form_connexion_inscription input[type='submit']:hover{
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid var(--color);
+    border-radius: 50px;
+    color: var(--color);
+}
+.form_connexion_inscription .link {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+.link a {
+    color: var(--color);
+    font-size: 14px;
+    text-decoration: 0;
+}
+.link a:hover {
+    text-decoration: underline;
+}
+
+/*Chat CSS*/
+.chat {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.button-email {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Deconnexion_btn {
+    padding: 5px 20px;
+    color: #fff;
+    background-color: var(--color);
+    font-size: 14px;
+    text-decoration: 0;
+    border-radius: 6px;
+}
+.messages_box {
+    min-height: 360px;
+    max-height: 360px;
+    min-width: 400px;
+    margin: 10px 0;
+    overflow: auto;
+    padding: 5px 10px;
+    border-top: 1px solid #f1f1f1;
+}
+.messages_box .message {
+   margin-bottom: 15px;
+   padding: 8px;
+   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+   width: 350px;
+}
+.messages_box .message span {
+    font-weight: bold;
+    font-size: 14px;
+}
+.messages_box p {
+    word-break: break-all;
+    font-size: 13px
+}
+.your_message {
+    border: 1px solid var(--color);
+    background-color: var(--color);
+    border-radius: 10px 10px 10px 0;
+    color: #fff;
+}
+.your_message span {
+    color: var(--color);
+}
+.others_message {
+    border: 1px solid #999;
+    margin-left: auto;
+    border-radius: 10px 10px 0 10px;
+}
+.others_message span {
+    color: #333;
+}
+.date {
+    color: #ccc;
+}
+.send_message {
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 10px
+}
+.send_message input[type='text'] {
+    caret-color: var(--color);
+    width: 100%;
+    resize: none;
+    background-color: #f1f1f1;
+    border-radius: 50px;
+    border: 0.7px solid #dadada;
+    outline: 0;
+    padding: 10px;
+    font-size: 14px;
+}
+.send_message input[type='text']::placeholder {
+    color: #4e4e4e;
+}
+.send_message input[type='submit']{
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 10px;
+    border-radius: 50px;
+    background-color: var(--color);
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid var(--color);
+    cursor: pointer;
+}
+.message_inscription {
+    padding: 10px 0;
+    margin: 5px 0;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 6px;
+}
